@@ -197,7 +197,7 @@ class AppModelTest {
 
         String actual = sut.flushOutput();
 
-        assertThat(actual).startsWith("I'm thinking of a number between 1 and 100.");
+        assertThat(actual).startsWith("I'm thinking of a number between 1 and 100." + NEW_LINE);
     }
 
     @ParameterizedTest

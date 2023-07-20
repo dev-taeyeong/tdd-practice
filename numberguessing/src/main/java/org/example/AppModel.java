@@ -82,7 +82,7 @@ public final class AppModel {
     private Processor startMultiPlayerGame(int answer) {
         return input -> {
             Object[] players = Stream.of(input.split(",")).map(String::trim).toArray();
-            print("I'm thinking of a number between 1 and 100.");
+            println("I'm thinking of a number between 1 and 100.");
             return getMultiPlayerGameProcessor(players, answer, 1);
         };
     }
